@@ -12,10 +12,12 @@ export default function Advices() {
     }
 
     useEffect(() => {
+        
         getAdvice();
     }, []);
     return (
         <main>
+            <h1 className="visually hidden">Advices Generator</h1>
             {advice && (
                 <div className="adviceBox">
                     <span>ADVICE #{advice.slip.id}</span> <p>❝ {advice.slip.advice} ❞</p>
